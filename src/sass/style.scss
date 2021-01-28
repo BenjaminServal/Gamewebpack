@@ -1,0 +1,101 @@
+@import "~bootstrap/scss/bootstrap";
+$color-red: rgb(255, 20, 20);
+$color-white: rgb(255, 255, 255);
+
+@mixin Flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+p {
+  color: $color-white;
+  font-family: 'Big Noodles';
+}
+
+body {
+  //background-image: url('../images/tosh.jpg');
+  flex-direction: row;
+  background-color: #1D1E1D;
+}
+
+a {
+  margin: 5px;
+} 
+
+img {
+  width: 100%;
+  height: 50%;
+}
+
+.page-list {
+  justify-content: center;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+form {
+  justify-content: center;
+  margin-top: auto;
+  margin-bottom: auto;
+  
+}
+
+.jumbotron {
+  margin: 0 -1rem;
+  min-height: 400px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+  .cardGame {
+    width: 30%;
+    border: none;
+
+    .more-info {
+      display: none;
+    }
+    &--hovered {
+      .more-info{
+        display: block;
+      }
+    }
+  }
+
+  .page-list {
+    h1{
+      color: white;
+      display: flex;
+      justify-content: center;
+
+    }
+  }
+
+#gameSearch {
+  width: 400px;
+  border-radius: 30px;
+}
+
+.page-list .card-platform {
+  display: flex;
+  height: 40px;
+  align-content: flex-end;
+
+}
+
+.title{
+  color: $color-white;
+}
+
+
+@font-face {
+  font-family: '';
+  src: url('../fonts/big_noodle_titling.ttf');
+}
+
+
+
